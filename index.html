@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Générateur de Mot de Passe</title>
+</head>
+
+<body>
+  <section class="container">
+    <video src="./video/2 Minute Timer Relaxing Music Lofi Fish Background.mp4" loop muted autoplay></video>
+    <div class="content">
+      <div class="case">
+        <div class="title">
+          <h1>Générateur de Mot de Passe</h1>
+        </div>
+        <label for="generatedPassword">Votre mot de passe :</label>
+        <span id="generatedPassword"></span>
+
+        <label for="length">Longueur du mot de passe :</label>
+        <input id="number" type="number" id="length" value="12" min="1" max="20">
+
+        <label>
+          <input type="checkbox" id="uppercase" checked>
+          Inclure des majuscules
+        </label>
+
+        <label>
+          <input type="checkbox" id="numbers" checked>
+          Inclure des chiffres
+        </label>
+
+        <label>
+          <input type="checkbox" id="symbols" checked>
+          Inclure des caractères spéciaux
+        </label>
+
+        <button id="generate">Générer</button>
+        <p id="password" class="password"></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
